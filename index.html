@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="ambient" aria-hidden="true">
+  <span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span><span class="orb orb-d"></span>
+</div>
 
 <header>
   <a class="brand" href="#home">
@@ -21,7 +24,15 @@
     <a href="#gallery">المعرض</a>
     <a href="#location">الموقع</a>
   </nav>
-  <a class="whatsapp" href="https://wa.me/966554160210">الحجز عبر واتساب</a>
+  <div class="header-actions">
+    <div class="social-mini" aria-label="حسابات التواصل الاجتماعي">
+      <a href="#socials" aria-label="Instagram" title="Instagram" class="instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+      <a href="#socials" aria-label="TikTok" title="TikTok" class="tiktok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.1a4.1 4.1 0 1 1-3-4V7.2c1.5 1.1 3.1 1.7 5 1.8V6.1c-.9-.1-1.6-.8-2-2.1H14Z" fill="currentColor"/></svg></a>
+      <a href="#socials" aria-label="Snapchat" title="Snapchat" class="snapchat"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c-3.1 0-5 2-5 5.2v2.1c0 .7-.4 1.3-1.1 1.7l-1.2.6c-.5.3-.4 1 .1 1.2l2.1.7c.4 1.2 1.3 2 2.5 2.4.6.2 1.1.7 1.3 1.4.1.5.6.8 1.1.7l.2-.1c.1 0 .1 0 .2.1.5.1 1-.2 1.1-.7.2-.7.7-1.2 1.3-1.4 1.2-.4 2.1-1.2 2.5-2.4l2.1-.7c.5-.2.6-.9.1-1.2l-1.2-.6c-.7-.4-1.1-1-1.1-1.7V8.7c0-3.2-1.9-5.2-5-5.2Z" fill="currentColor"/></svg></a>
+      <a href="https://wa.me/966554160210" aria-label="WhatsApp" title="WhatsApp" class="wa"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.5 13.4L3.2 20.8l4.3-1.2A8.8 8.8 0 1 0 12 3.2Zm0 15.8a7 7 0 0 1-3.6-1l-.3-.2-2.5.7.7-2.4-.2-.3A7 7 0 1 1 12 19Zm3.9-5.1c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5.1-1.9-.9-3.1-1.7-4.1-3.7-.1-.2 0-.4.1-.5l.5-.6c.1-.2.2-.3.2-.5s0-.3-.1-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.5 2.3 1 2.3.7 2.7.7.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1.1-.1-.1-.2-.2-.4-.3Z" fill="currentColor"/></svg></a>
+    </div>
+    <a class="whatsapp" href="https://wa.me/966554160210">الحجز عبر واتساب</a>
+  </div>
 </header>
 
 <main id="home">
@@ -44,94 +55,52 @@
 <section id="about" class="section">
   <div class="title"><span>01</span><h2>نبذة عن المكان</h2></div>
   <div class="about">
-    <div>
-      <p class="lead">Yellow Zone مركز ترفيهي للأطفال والعائلات، يجمع الألعاب والأنشطة والفعاليات في تجربة واحدة ممتعة.</p>
-      <p>المكان مناسب للزيارات العائلية والتجمعات، كما يوفر تنظيم أعياد الميلاد واستقبال الرحلات المدرسية مع إمكانية التنسيق والحجز مسبقًا عبر واتساب.</p>
-    </div>
-    <div class="feature-grid">
-      <div><b>ألعاب وتجارب</b><small>أنشطة متنوعة ووقت ممتع</small></div>
-      <div><b>أعياد ميلاد</b><small>ديكورات وباقات للفعاليات</small></div>
-      <div><b>رحلات مدرسية</b><small>تنظيم للمجموعات</small></div>
-      <div><b>حجز واتساب</b><small>تواصل سريع ومباشر</small></div>
-    </div>
+    <div><p class="lead">Yellow Zone مركز ترفيهي للأطفال والعائلات، يجمع الألعاب والأنشطة والفعاليات في تجربة واحدة ممتعة.</p><p>المكان مناسب للزيارات العائلية والتجمعات، كما يوفر تنظيم أعياد الميلاد واستقبال الرحلات المدرسية مع إمكانية التنسيق والحجز مسبقًا عبر واتساب.</p></div>
+    <div class="feature-grid"><div><b>ألعاب وتجارب</b><small>أنشطة متنوعة ووقت ممتع</small></div><div><b>أعياد ميلاد</b><small>ديكورات وباقات للفعاليات</small></div><div><b>رحلات مدرسية</b><small>تنظيم للمجموعات</small></div><div><b>حجز واتساب</b><small>تواصل سريع ومباشر</small></div></div>
   </div>
 </section>
 
-<section id="prices" class="section prices">
-  <div class="title"><span>02</span><h2>الأسعار الرئيسية</h2></div>
-  <div class="cards">
-    <article><small>01</small><h3>ساعة</h3><strong>45 <i>ريال</i></strong><p>دخول لمدة ساعة.</p><a href="https://wa.me/966554160210?text=أبغى%20أحجز%20ساعة%20في%20Yellow%20Zone">احجز</a></article>
-    <article class="featured"><small>02</small><h3>ساعتان</h3><strong>60 <i>ريال</i></strong><p>دخول لمدة ساعتين.</p><a href="https://wa.me/966554160210?text=أبغى%20أحجز%20ساعتين%20في%20Yellow%20Zone">احجز</a></article>
-    <article><small>03</small><h3>وقت مفتوح</h3><strong>11 <i>ريال</i></strong><p>حسب العرض المتاح.</p><a href="https://wa.me/966554160210?text=أبغى%20أستفسر%20عن%20الوقت%20المفتوح">استفسر</a></article>
-    <article><small>04</small><h3>تجديد ساعة</h3><strong>20 <i>ريال</i></strong><p>إضافة ساعة للزيارة.</p><a href="https://wa.me/966554160210?text=أبغى%20أضيف%20ساعة%20في%20Yellow%20Zone">احجز</a></article>
-  </div>
-</section>
+<section id="prices" class="section prices"><div class="title"><span>02</span><h2>الأسعار الرئيسية</h2></div><div class="cards">
+  <article><small>01</small><h3>ساعة</h3><strong>45 <i>ريال</i></strong><p>دخول لمدة ساعة.</p><a href="https://wa.me/966554160210?text=أبغى%20أحجز%20ساعة%20في%20Yellow%20Zone">احجز</a></article>
+  <article class="featured"><small>02</small><h3>ساعتان</h3><strong>60 <i>ريال</i></strong><p>دخول لمدة ساعتين.</p><a href="https://wa.me/966554160210?text=أبغى%20أحجز%20ساعتين%20في%20Yellow%20Zone">احجز</a></article>
+  <article><small>03</small><h3>وقت مفتوح</h3><strong>11 <i>ريال</i></strong><p>حسب العرض المتاح.</p><a href="https://wa.me/966554160210?text=أبغى%20أستفسر%20عن%20الوقت%20المفتوح">استفسر</a></article>
+  <article><small>04</small><h3>تجديد ساعة</h3><strong>20 <i>ريال</i></strong><p>إضافة ساعة للزيارة.</p><a href="https://wa.me/966554160210?text=أبغى%20أضيف%20ساعة%20في%20Yellow%20Zone">احجز</a></article>
+</div></section>
 
-<section id="birthday" class="section birthday">
-  <div class="photo"><img src="assets/images/birthday-decor.jpg" alt="ديكورات أعياد الميلاد"></div>
-  <div>
-    <div class="title"><span>03</span><h2>أعياد الميلاد</h2></div>
-    <p class="lead">نجهز لكم أجواء عيد ميلاد مميزة مع الديكورات والفعاليات والإضافات المناسبة للمجموعة.</p>
-    <div class="birthday-prices">
-      <div><b>10 أطفال</b><strong>1350 ريال</strong></div>
-      <div><b>15 طفلًا</b><strong>1800 ريال</strong></div>
-      <div><b>طفل إضافي</b><strong>90 ريال</strong></div>
-      <div><b>فقرة الساحر</b><strong>300 ريال</strong></div>
-      <div><b>رسم على الوجه</b><strong>10 ريال</strong></div>
-    </div>
-    <a class="btn yellow" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20حفلة%20ميلاد%20في%20Yellow%20Zone">حجز حفلة ميلاد عبر واتساب</a>
-  </div>
-</section>
+<section id="birthday" class="section birthday"><div class="photo"><img src="assets/images/birthday-decor.jpg" alt="ديكورات أعياد الميلاد"></div><div><div class="title"><span>03</span><h2>أعياد الميلاد</h2></div><p class="lead">نجهز لكم أجواء عيد ميلاد مميزة مع الديكورات والفعاليات والإضافات المناسبة للمجموعة.</p><div class="birthday-prices"><div><b>10 أطفال</b><strong>1350 ريال</strong></div><div><b>15 طفلًا</b><strong>1800 ريال</strong></div><div><b>طفل إضافي</b><strong>90 ريال</strong></div><div><b>فقرة الساحر</b><strong>300 ريال</strong></div><div><b>رسم على الوجه</b><strong>10 ريال</strong></div></div><a class="btn yellow" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20حفلة%20ميلاد%20في%20Yellow%20Zone">حجز حفلة ميلاد عبر واتساب</a></div></section>
 
-<section id="schools" class="section schools">
-  <div class="title"><span>04</span><h2>الرحلات المدرسية</h2></div>
-  <div class="school">
-    <div class="school-image"><img src="assets/images/school-trip.jpg" alt="الرحلات المدرسية في Yellow Zone"></div>
-    <div class="school-copy">
-      <p class="lead">نستقبل الرحلات المدرسية ونوفر تجربة جماعية ممتعة ومنظمة للطلاب.</p>
-      <div class="school-price"><span>سعر الرحلة</span><strong>60 ريال</strong></div>
-      <a class="btn yellow" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20رحلة%20مدرسية%20في%20Yellow%20Zone">حجز رحلة مدرسية عبر واتساب</a>
-    </div>
-  </div>
-</section>
+<section id="schools" class="section schools"><div class="title"><span>04</span><h2>الرحلات المدرسية</h2></div><div class="school"><div class="school-image"><img src="assets/images/school-trip.jpg" alt="الرحلات المدرسية في Yellow Zone"></div><div class="school-copy"><p class="lead">نستقبل الرحلات المدرسية ونوفر تجربة جماعية ممتعة ومنظمة للطلاب.</p><div class="school-price"><span>سعر الرحلة</span><strong>60 ريال</strong></div><a class="btn yellow" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20رحلة%20مدرسية%20في%20Yellow%20Zone">حجز رحلة مدرسية عبر واتساب</a></div></div></section>
 
-<section id="gallery" class="section">
-  <div class="title"><span>05</span><h2>أجواء المكان</h2></div>
-  <p class="intro">صور وفيديوهات من الفعاليات وأجواء Yellow Zone. صور أعياد الميلاد موجودة في قسمها، وباقي صور المكان هنا.</p>
-  <div class="video-grid">
-    <video controls playsinline preload="metadata"><source src="assets/videos/1000054343.mp4" type="video/mp4"></video>
-    <video controls playsinline preload="metadata"><source src="assets/videos/1000054344.mp4" type="video/mp4"></video>
-    <video controls playsinline preload="metadata"><source src="assets/videos/1000054345.mp4" type="video/mp4"></video>
-    <video controls playsinline preload="metadata"><source src="assets/videos/1000054346.mp4" type="video/mp4"></video>
-    <video controls playsinline preload="metadata"><source src="assets/videos/1000054348.mp4" type="video/mp4"></video>
-    <video controls playsinline preload="metadata"><source src="assets/videos/1000054349.mp4" type="video/mp4"></video>
-  </div>
-</section>
+<section id="gallery" class="section"><div class="title"><span>05</span><h2>أجواء المكان</h2></div><p class="intro">صور وفيديوهات من الفعاليات وأجواء Yellow Zone.</p><div class="video-grid">
+  <video controls playsinline preload="metadata"><source src="assets/videos/1000054343.mp4" type="video/mp4"></video><video controls playsinline preload="metadata"><source src="assets/videos/1000054344.mp4" type="video/mp4"></video><video controls playsinline preload="metadata"><source src="assets/videos/1000054345.mp4" type="video/mp4"></video><video controls playsinline preload="metadata"><source src="assets/videos/1000054346.mp4" type="video/mp4"></video><video controls playsinline preload="metadata"><source src="assets/videos/1000054348.mp4" type="video/mp4"></video><video controls playsinline preload="metadata"><source src="assets/videos/1000054349.mp4" type="video/mp4"></video>
+</div></section>
 
-<section id="location" class="location section">
-  <div>
-    <span class="eyebrow">VISIT YELLOW ZONE</span>
-    <h2>الموقع والتواصل</h2>
-    <p>حي قرطبة، مجمع الحسن سكوير، بجوار أسواق المزرعة.</p>
-    <p class="phone">0554160210</p>
-  </div>
-  <div class="location-actions">
-    <a class="btn yellow" href="https://www.google.com/maps/search/?api=1&query=Yellow%20Zone%20Qurtubah%20Riyadh">فتح الموقع على الخريطة</a>
-    <a class="btn green" href="https://wa.me/966554160210">واتساب</a>
-  </div>
-</section>
+<section id="location" class="location section"><div><span class="eyebrow">VISIT YELLOW ZONE</span><h2>الموقع والتواصل</h2><p>حي قرطبة، مجمع الحسن سكوير، بجوار أسواق المزرعة.</p><p class="phone">0554160210</p></div><div class="location-actions"><a class="btn yellow" href="https://www.google.com/maps/search/?api=1&query=Yellow%20Zone%20Qurtubah%20Riyadh">فتح الموقع على الخريطة</a><a class="btn green" href="https://wa.me/966554160210">واتساب</a></div></section>
 
-<section class="socials">
-  <h2>تابعوا Yellow Zone</h2>
-  <div class="social-grid">
-    <div><b>Instagram</b><span>حساب المركز</span></div>
-    <div><b>TikTok</b><span>حساب المركز</span></div>
-    <div><b>Snapchat</b><span>حساب المركز</span></div>
-  </div>
-</section>
+<section id="socials" class="socials"><h2>تابعوا Yellow Zone</h2><p>كل حسابات التواصل في مكان واحد</p><div class="social-grid">
+  <a href="#socials" class="social-card instagram"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></span><b>Instagram</b><small>حساب المركز</small></a>
+  <a href="#socials" class="social-card tiktok"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.1a4.1 4.1 0 1 1-3-4V7.2c1.5 1.1 3.1 1.7 5 1.8V6.1c-.9-.1-1.6-.8-2-2.1H14Z" fill="currentColor"/></svg></span><b>TikTok</b><small>حساب المركز</small></a>
+  <a href="#socials" class="social-card snapchat"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c-3.1 0-5 2-5 5.2v2.1c0 .7-.4 1.3-1.1 1.7l-1.2.6c-.5.3-.4 1 .1 1.2l2.1.7c.4 1.2 1.3 2 2.5 2.4.6.2 1.1.7 1.3 1.4.1.5.6.8 1.1.7l.2-.1c.1 0 .1 0 .2.1.5.1 1-.2 1.1-.7.2-.7.7-1.2 1.3-1.4 1.2-.4 2.1-1.2 2.5-2.4l2.1-.7c.5-.2.6-.9.1-1.2l-1.2-.6c-.7-.4-1.1-1-1.1-1.7V8.7c0-3.2-1.9-5.2-5-5.2Z" fill="currentColor"/></svg></span><b>Snapchat</b><small>حساب المركز</small></a>
+  <a href="https://wa.me/966554160210" class="social-card wa"><span class="social-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.5 13.4L3.2 20.8l4.3-1.2A8.8 8.8 0 1 0 12 3.2Zm0 15.8a7 7 0 0 1-3.6-1l-.3-.2-2.5.7.7-2.4-.2-.3A7 7 0 1 1 12 19Zm3.9-5.1c-.2-.1-1.3-.7-1.5-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5.1-1.9-.9-3.1-1.7-4.1-3.7-.1-.2 0-.4.1-.5l.5-.6c.1-.2.2-.3.2-.5s0-.3-.1-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.9 3.5 2.3 1 2.3.7 2.7.7.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1.1-.1-.1-.2-.2-.4-.3Z" fill="currentColor"/></svg></span><b>WhatsApp</b><small>للحجز والتواصل</small></a>
+</div></section>
 </main>
-
 <footer>© Yellow Zone • جميع الحقوق محفوظة</footer>
-<a class="float-wa" href="https://wa.me/966554160210" aria-label="واتساب">◔</a>
+<a class="float-wa" href="https://wa.me/966554160210" aria-label="واتساب"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.5 13.4L3.2 20.8l4.3-1.2A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.1 8.2c-.2-.3-.4-.3-.6-.3h-.5c-.2 0-.5.1-.7.3-.2.2-.7.7-.7 1.8s.8 2.1.9 2.3c.1.2 1.5 2.4 3.7 3.4 2.2 1 2.2.7 2.6.7.4 0 1.2-.5 1.4-1 .2-.5.2-.9.1-1.1-.1-.1-.2-.2-.4-.3l-1.4-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.1-.2.2-.5.1-1.8-.8-2.9-1.6-3.8-3.5-.1-.2 0-.3.1-.5l.5-.6c.1-.2.2-.3.2-.5s-.1-.3-.1-.5l-.7-1.5Z" fill="currentColor"/></svg></a>
+<script>
+(() => {
+  const orbs = [...document.querySelectorAll('.orb')];
+  let mx = innerWidth / 2, my = innerHeight / 2, tx = mx, ty = my;
+  addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; });
+  addEventListener('touchmove', e => { if (e.touches[0]) { tx = e.touches[0].clientX; ty = e.touches[0].clientY; } }, {passive:true});
+  addEventListener('scroll', () => { document.documentElement.style.setProperty('--scroll-y', scrollY + 'px'); }, {passive:true});
+  function animate(){
+    mx += (tx - mx) * .045; my += (ty - my) * .045;
+    const sx = (mx / innerWidth - .5) * 2, sy = (my / innerHeight - .5) * 2;
+    orbs.forEach((o,i) => { const f = (i+1)*14; o.style.transform = `translate3d(${sx*f}px, ${sy*f - (scrollY%(180+i*40))*0.12}px,0)`; });
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+</script>
 </body>
 </html>
