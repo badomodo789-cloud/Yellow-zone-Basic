@@ -1,72 +1,137 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Yellow Zone | يلو زون</title>
+<title>Yellow Zone</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
-  <div class="brand"><div class="logo"><img src="assets/images/logo.jpg" alt="Yellow Zone"></div><div><b>Yellow Zone</b><small>منطقة المتعة والترفيه</small></div></div>
-  <a class="wa" href="https://wa.me/966554160210">الحجز عبر واتساب</a>
+  <a class="brand" href="#home">
+    <span class="logo"><img src="assets/images/logo.jpg" alt="Yellow Zone"></span>
+    <span><b>Yellow Zone</b><small>منطقة ترفيه وفعاليات</small></span>
+  </a>
+  <nav>
+    <a href="#about">عن المكان</a>
+    <a href="#prices">الأسعار</a>
+    <a href="#birthday">أعياد الميلاد</a>
+    <a href="#schools">الرحلات المدرسية</a>
+    <a href="#gallery">المعرض</a>
+    <a href="#location">الموقع</a>
+  </nav>
+  <a class="whatsapp" href="https://wa.me/966554160210">الحجز عبر واتساب</a>
 </header>
 
+<main id="home">
 <section class="hero">
-  <div class="heroText">
-    <span class="tag">يلو زون • جدة</span>
-    <h1>مكان واحد، <em>متعة أكثر</em></h1>
-    <p>تجربة ترفيهية تجمع اللعب والفعاليات وأعياد الميلاد والرحلات المدرسية في أجواء مناسبة للعائلة والأطفال.</p>
+  <div class="hero-copy">
+    <span class="eyebrow">YELLOW ZONE</span>
+    <h1>عالم من المتعة<br><em>ينتظركم</em></h1>
+    <p>ألعاب وتجارب وفعاليات وأعياد ميلاد ورحلات مدرسية، كلها في مكان واحد.</p>
     <div class="actions">
-      <a class="primary" href="#prices">الأسعار الرئيسية</a>
-      <a class="secondary" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20في%20Yellow%20Zone">احجز الآن</a>
+      <a class="btn yellow" href="#prices">الأسعار</a>
+      <a class="btn dark" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20في%20Yellow%20Zone">احجز الآن</a>
     </div>
   </div>
-  <div class="heroCard">
-    <img src="assets/images/birthday.jpg" alt="فعاليات Yellow Zone">
-    <div>فعاليات وتجارب ممتعة</div>
+  <div class="hero-art">
+    <div class="logo-ring"><img src="assets/images/logo.jpg" alt="شعار Yellow Zone"></div>
+    <div class="hero-note"><b>ألعاب • أعياد ميلاد • رحلات مدرسية</b><span>متعة وذكريات في مكان واحد</span></div>
   </div>
 </section>
 
-<section class="about">
-<h2>نبذة عن المكان</h2>
-<p>Yellow Zone مركز ترفيهي في جدة مصمم لقضاء وقت ممتع مع الأصدقاء والعائلة. يوفر تجارب وألعاب وفعاليات متنوعة، مع إمكانية تنظيم أعياد الميلاد والرحلات المدرسية والحجز والتنسيق مباشرة عبر واتساب.</p>
+<section id="about" class="section">
+  <div class="title"><span>01</span><h2>نبذة عن المكان</h2></div>
+  <div class="about">
+    <div>
+      <p class="lead">Yellow Zone مركز ترفيهي للأطفال والعائلات، يجمع الألعاب والأنشطة والفعاليات في تجربة واحدة ممتعة.</p>
+      <p>المكان مناسب للزيارات العائلية والتجمعات، كما يوفر تنظيم أعياد الميلاد واستقبال الرحلات المدرسية مع إمكانية التنسيق والحجز مسبقًا عبر واتساب.</p>
+    </div>
+    <div class="feature-grid">
+      <div><b>ألعاب وتجارب</b><small>أنشطة متنوعة ووقت ممتع</small></div>
+      <div><b>أعياد ميلاد</b><small>ديكورات وباقات للفعاليات</small></div>
+      <div><b>رحلات مدرسية</b><small>تنظيم للمجموعات</small></div>
+      <div><b>حجز واتساب</b><small>تواصل سريع ومباشر</small></div>
+    </div>
+  </div>
 </section>
 
-<section id="prices">
-<h2>الأسعار الرئيسية</h2>
-<div class="grid">
-  <article><h3>ساعة</h3><strong>45 ريال</strong><p>تجربة لمدة ساعة.</p></article>
-  <article><h3>ساعتان</h3><strong>60 ريال</strong><p>وقت أطول للمتعة.</p></article>
-  <article><h3>وقت مفتوح</h3><strong>11 ريال</strong><p>الدخول حسب العرض المتاح.</p></article>
-  <article><h3>تجديد ساعة</h3><strong>20 ريال</strong><p>إضافة ساعة للزيارة.</p></article>
-</div>
+<section id="prices" class="section prices">
+  <div class="title"><span>02</span><h2>الأسعار الرئيسية</h2></div>
+  <div class="cards">
+    <article><small>01</small><h3>ساعة</h3><strong>45 <i>ريال</i></strong><p>دخول لمدة ساعة.</p><a href="https://wa.me/966554160210?text=أبغى%20أحجز%20ساعة%20في%20Yellow%20Zone">احجز</a></article>
+    <article class="featured"><small>02</small><h3>ساعتان</h3><strong>60 <i>ريال</i></strong><p>دخول لمدة ساعتين.</p><a href="https://wa.me/966554160210?text=أبغى%20أحجز%20ساعتين%20في%20Yellow%20Zone">احجز</a></article>
+    <article><small>03</small><h3>وقت مفتوح</h3><strong>11 <i>ريال</i></strong><p>حسب العرض المتاح.</p><a href="https://wa.me/966554160210?text=أبغى%20أستفسر%20عن%20الوقت%20المفتوح">استفسر</a></article>
+    <article><small>04</small><h3>تجديد ساعة</h3><strong>20 <i>ريال</i></strong><p>إضافة ساعة للزيارة.</p><a href="https://wa.me/966554160210?text=أبغى%20أضيف%20ساعة%20في%20Yellow%20Zone">احجز</a></article>
+  </div>
 </section>
 
-<section class="school">
-<h2>الرحلات المدرسية</h2>
-<p>نستقبل الرحلات المدرسية ونوفر تجربة جماعية منظمة وممتعة للطلاب، مع إمكانية التنسيق والحجز المسبق عبر واتساب.</p>
-<div class="priceLine"><span>الرحلات المدرسية</span><b>60 ريال</b></div>
-<a class="primary" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أستفسر%20عن%20رحلة%20مدرسية%20في%20Yellow%20Zone">تنسيق رحلة مدرسية</a>
+<section id="birthday" class="section birthday">
+  <div class="photo"><img src="assets/images/birthday-decor.jpg" alt="ديكورات أعياد الميلاد"></div>
+  <div>
+    <div class="title"><span>03</span><h2>أعياد الميلاد</h2></div>
+    <p class="lead">نجهز لكم أجواء عيد ميلاد مميزة مع الديكورات والفعاليات والإضافات المناسبة للمجموعة.</p>
+    <div class="birthday-prices">
+      <div><b>10 أطفال</b><strong>1350 ريال</strong></div>
+      <div><b>15 طفلًا</b><strong>1800 ريال</strong></div>
+      <div><b>طفل إضافي</b><strong>90 ريال</strong></div>
+      <div><b>فقرة الساحر</b><strong>300 ريال</strong></div>
+      <div><b>رسم على الوجه</b><strong>10 ريال</strong></div>
+    </div>
+    <a class="btn yellow" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20حفلة%20ميلاد%20في%20Yellow%20Zone">حجز حفلة ميلاد عبر واتساب</a>
+  </div>
 </section>
 
-<section class="birthday">
-<div><h2>أعياد الميلاد</h2><p>خلّوا يوم الميلاد مناسبة مختلفة داخل Yellow Zone. نساعدكم في تنظيم الحجز والفعالية، مع باقات مناسبة للمجموعات وإضافات يمكن تنسيقها مسبقًا.</p>
-<div class="grid mini">
-<article><h3>10 أطفال</h3><strong>1350 ريال</strong></article>
-<article><h3>15 طفلًا</h3><strong>1800 ريال</strong></article>
-<article><h3>طفل إضافي</h3><strong>90 ريال</strong></article>
-<article><h3>فقرة الساحر</h3><strong>300 ريال</strong></article>
-<article><h3>رسم على الوجه</h3><strong>10 ريال</strong></article>
-</div></div>
+<section id="schools" class="section schools">
+  <div class="title"><span>04</span><h2>الرحلات المدرسية</h2></div>
+  <div class="school">
+    <div class="school-image"><img src="assets/images/school-trip.jpg" alt="الرحلات المدرسية في Yellow Zone"></div>
+    <div class="school-copy">
+      <p class="lead">نستقبل الرحلات المدرسية ونوفر تجربة جماعية ممتعة ومنظمة للطلاب.</p>
+      <div class="school-price"><span>سعر الرحلة</span><strong>60 ريال</strong></div>
+      <a class="btn yellow" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20رحلة%20مدرسية%20في%20Yellow%20Zone">حجز رحلة مدرسية عبر واتساب</a>
+    </div>
+  </div>
 </section>
 
-<section class="cta">
-<h2>جاهزين للمتعة؟</h2>
-<p>للحجز والاستفسار عن المواعيد والتفاصيل، تواصلوا معنا مباشرة.</p>
-<a class="wa big" href="https://wa.me/966554160210?text=السلام%20عليكم،%20أبغى%20أحجز%20في%20Yellow%20Zone">الحجز والاستفسار عبر واتساب</a>
+<section id="gallery" class="section">
+  <div class="title"><span>05</span><h2>أجواء المكان</h2></div>
+  <p class="intro">صور وفيديوهات من الفعاليات وأجواء Yellow Zone. صور أعياد الميلاد موجودة في قسمها، وباقي صور المكان هنا.</p>
+  <div class="video-grid">
+    <video controls playsinline preload="metadata"><source src="assets/videos/1000054343.mp4" type="video/mp4"></video>
+    <video controls playsinline preload="metadata"><source src="assets/videos/1000054344.mp4" type="video/mp4"></video>
+    <video controls playsinline preload="metadata"><source src="assets/videos/1000054345.mp4" type="video/mp4"></video>
+    <video controls playsinline preload="metadata"><source src="assets/videos/1000054346.mp4" type="video/mp4"></video>
+    <video controls playsinline preload="metadata"><source src="assets/videos/1000054348.mp4" type="video/mp4"></video>
+    <video controls playsinline preload="metadata"><source src="assets/videos/1000054349.mp4" type="video/mp4"></video>
+  </div>
 </section>
 
-<footer>© Yellow Zone — جدة</footer>
+<section id="location" class="location section">
+  <div>
+    <span class="eyebrow">VISIT YELLOW ZONE</span>
+    <h2>الموقع والتواصل</h2>
+    <p>حي قرطبة، مجمع الحسن سكوير، بجوار أسواق المزرعة.</p>
+    <p class="phone">0554160210</p>
+  </div>
+  <div class="location-actions">
+    <a class="btn yellow" href="https://www.google.com/maps/search/?api=1&query=Yellow%20Zone%20Qurtubah%20Riyadh">فتح الموقع على الخريطة</a>
+    <a class="btn green" href="https://wa.me/966554160210">واتساب</a>
+  </div>
+</section>
+
+<section class="socials">
+  <h2>تابعوا Yellow Zone</h2>
+  <div class="social-grid">
+    <div><b>Instagram</b><span>حساب المركز</span></div>
+    <div><b>TikTok</b><span>حساب المركز</span></div>
+    <div><b>Snapchat</b><span>حساب المركز</span></div>
+  </div>
+</section>
+</main>
+
+<footer>© Yellow Zone • جميع الحقوق محفوظة</footer>
+<a class="float-wa" href="https://wa.me/966554160210" aria-label="واتساب">◔</a>
 </body>
 </html>
